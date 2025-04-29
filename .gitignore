@@ -2,7 +2,6 @@
 .vscode
 catboost_info
 logs/
-*.flake8
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
