@@ -1,0 +1,50 @@
+[project]
+name = "itmo-mlops"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Georgy Kiselev", email = "gsx2002@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+
+dependencies = [
+    "requests>=2.32.3,<3.0.0",
+    "tqdm>=4.67.1,<5.0.0",
+    "matplotlib>=3.1.0",
+    "numpy>=2.2.5,<3.0.0",
+    "torch (>=2.7.0,<3.0.0)"
+]
+
+[tool.poetry.group.app.dependencies]
+wandb = ">=0.10.31"
+fastapi = "^0.115.12"
+pydantic = "^2.11.3"
+pymongo = "^4.12.0"
+python-magic = "^0.4.27"
+wget = "^3.2"
+
+[tool.poetry.group.ocr.dependencies]
+requests = ">=2.32.3,<3.0.0"
+random-word = ">=1.0.13,<2.0.0"
+tqdm = ">=4.67.1,<5.0.0"
+streamlit = ">=1.0.0"
+wandb = ">=0.10.31"
+matplotlib = ">=3.1.0"
+defusedxml = ">=0.7.1,<0.8.0"
+opencv-python-headless = ">=4.11.0.86,<5.0.0.0"
+anyascii = ">=0.3.2,<0.4.0"
+ipykernel = "==6.29.5"
+numpy = ">=2.2.5,<3.0.0"
+pyyaml = "^6.0.2"
+wget = "^3.2"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.2.3"
+flake8 = "^7.2.0"
+pre-commit = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
