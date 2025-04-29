@@ -13,7 +13,20 @@
 
 ## Используемые инструменты:
 
-Для управления зависимостями - poetry\
-Для больших данных - HuggingFace (GIT LFS)\
-Линтер - flake8\
-Docker
+ - Для управления зависимостями - poetry
+ - Для больших данных - HuggingFace (GIT LFS)
+ - Линтер - flake8
+ - Docker
+
+## Описание CI-пайплайнов
+
+CI-пайплайны реализованы с помощью GitHub Actions и описаны в файлах в папке `.github/workflows.` Пайплайны запускаются при push в любую из веток. Включают в себя проверку линтером, сборку Docker-образа и сборку документации. 
+
+
+## Запуск проекта
+
+1. Клон репозитория: `git clone https://github.com/something-original/mlops_itmo.git && cd mlops_itmo`
+2. Установка зависимостей с помощью poetry: `poetry install --no-root`
+3. Для использования pre-commit хуков: `poetry run pre-commit install`
+4. Можно использовать Docker: `docker build --tag "mlops_itmo" . ` или docker-compose `docker-compose up`
+
