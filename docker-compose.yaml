@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/
+    volumes:
+      - ./app/my_doctr:/app/my_doctr
+    working_dir: /app
+    stdin_open: true
+    tty: true
+
+volumes:
+  mongo_data:
