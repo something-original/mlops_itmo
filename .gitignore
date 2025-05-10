@@ -2,6 +2,9 @@
 .vscode
 catboost_info
 logs/
+data_1.zip
+EasyOCR/
+dataset/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

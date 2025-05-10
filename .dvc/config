@@ -1,0 +1,2 @@
+['remote "hf"']
+    url = https://huggingface.co/datasets/smthrgnl/ocr_cyrillic_english
