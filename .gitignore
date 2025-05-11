@@ -5,6 +5,8 @@ logs/
 data_1.zip
 EasyOCR/
 dataset/
+dataset.zip
+ocr_model_training/arial-cyr.ttf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -19,7 +19,10 @@ dependencies = [
     "doctr (>=1.9.0,<2.0.0)",
     "dotenv (>=0.9.9,<0.10.0)",
     "huggingface-hub (>=0.31.1,<0.32.0)",
-    "dvc (>=3.59.2,<4.0.0)"
+    "dvc (>=3.59.2,<4.0.0)",
+    "dvc-gdrive (>=3.0.1,<4.0.0)",
+    "rclone (>=0.4.4,<0.5.0)",
+    "pydrive2 (>=1.21.3,<2.0.0)"
 ]
 
 [tool.poetry.group.app.dependencies]
