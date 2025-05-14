@@ -7,6 +7,9 @@ EasyOCR/
 dataset/
 dataset.zip
 ocr_model_training/arial-cyr.ttf
+train/
+test_/
+val/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

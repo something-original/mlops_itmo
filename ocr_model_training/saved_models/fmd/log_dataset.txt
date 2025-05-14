@@ -1,0 +1,160 @@
+--------------------------------------------------------------------------------
+dataset_root: all_data/train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: all_data/train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: all_data/train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR/trainer\all_data/train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR/trainer\all_data/train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+dataset_root: d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images
+opt.select_data: ['train']
+opt.batch_ratio: ['1']
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\train\images	 dataset: train
+sub-directory:	/.	 num samples: 30000
+num total samples of train: 30000 x 1.0 (total_data_usage_ratio) = 30000
+num samples of train per batch: 64 x 1.0 (batch_ratio) = 64
+--------------------------------------------------------------------------------
+Total_batch_size: 64 = 64
+--------------------------------------------------------------------------------
+dataset_root:    d:\itmo\mlops_itmo\ocr_model_training\EasyOCR\trainer\all_data\val\images	 dataset: /
+sub-directory:	/.	 num samples: 10000
+--------------------------------------------------------------------------------
