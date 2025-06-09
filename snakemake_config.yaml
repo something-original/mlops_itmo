@@ -1,0 +1,4 @@
+split:
+  train: 0.07
+  val: 0.015
+  test: 0.015 

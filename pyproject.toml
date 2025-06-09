@@ -6,7 +6,7 @@ authors = [
     {name = "Georgy Kiselev", email = "gsx2002@yandex.ru"}
 ]
 readme = "README.md"
-requires-python = ">=3.12,<4.0.0"
+requires-python = ">=3.11.0,<3.13"
 
 dependencies = [
     "requests>=2.32.3,<3.0.0",
@@ -34,8 +34,23 @@ dependencies = [
     "shapely (>=2.1.0,<3.0.0)",
     "pyclipper (>=1.3.0.post6,<2.0.0)",
     "ninja (>=1.11.1.4,<2.0.0.0)",
-    "nltk (>=3.9.1,<4.0.0)"
+    "nltk (>=3.9.1,<4.0.0)",
+    "numpy (==1.26.1)",
+    "torchvision (>=0.15.0)",
+    "torch (>=2.7.0)",
+    "python-doctr[torch] (>=0.11.0,<0.12.0)",
+    "snakemake (>=9.5.1,<10.0.0)",
 ]
+
+[tool.poetry.dependencies]
+python = ">=3.11.0, <3.13"
+torch = { version = "2.7.0+cu128", source = "torch-cu128" }
+
+[[tool.poetry.source]]
+name = "torch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+priority = "explicit"
+
 
 [tool.poetry.group.app.dependencies]
 wandb = ">=0.10.31"

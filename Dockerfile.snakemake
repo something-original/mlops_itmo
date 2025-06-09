@@ -1,0 +1,14 @@
+FROM python:3.12-slim
+
+WORKDIR /workspace
+
+COPY pyproject.toml poetry.lock ./
+RUN pip install poetry && poetry config virtualenvs.create false && poetry install --no-root
+
+RUN pip install snakemake dvc[all]
+
+COPY ocr_model_training/ ocr_model_training/
+COPY Snakefile ./
+COPY config.yaml ./
+
+CMD ["snakemake", "--cores", "1"] 
