@@ -20,19 +20,21 @@ VOCABS = local_vocabs.VOCABS
 
 
 def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
-    script = os.path.join('references', 'recognition', 'train_pytorch.py')
     vocab = 'multilingual'
     cmd = [
-        sys.executable, script, model_name,
+        sys.executable, '-m', 'references.recognition.train_pytorch', model_name,
         '--train_path', f'../../{train_dir}',
         '--val_path', f'../../{val_dir}',
         '--vocab', vocab,
         '--epochs', str(epochs),
         '--name', model_name,
-        '--device', str(device),
-        '--pretrained'
+        '--device', str(device)
     ]
-    subprocess.run(cmd, check=True, cwd='ocr_model_training/doctr')
+    env = os.environ.copy()
+    # Add the recognition directory to PYTHONPATH
+    recognition_dir = os.path.abspath(os.path.join('ocr_model_training', 'doctr', 'references', 'recognition'))
+    env['PYTHONPATH'] = recognition_dir + os.pathsep + env.get('PYTHONPATH', '')
+    subprocess.run(cmd, check=True, cwd='ocr_model_training/doctr', env=env)
 
     src = os.path.join('doctr', f'{model_name}.pt')
     dst = os.path.join(out_dir, f'{model_name}.pt')
@@ -45,11 +47,11 @@ def evaluate_model(model_name, checkpoint_path, test_dir):
 
     if model_name == 'doctr_parseq':
         recognition_model = parseq(
-            pretrained=False, pretrained_backbone=False, vocab=VOCABS['russian']
+            pretrained=False, pretrained_backbone=False, vocab=VOCABS['multilingual']
         )
     elif model_name == 'doctr_master':
         recognition_model = master(
-            pretrained=False, pretrained_backbone=False, vocab=VOCABS['russian']
+            pretrained=False, pretrained_backbone=False, vocab=VOCABS['multilingual']
         )
     else:
         raise ValueError(f"Unknown model: {model_name}")

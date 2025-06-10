@@ -5,6 +5,7 @@ rule all:
         expand("{split}/images", split=["ocr_model_training/train", "ocr_model_training/val", "ocr_model_training/test"]),
         expand("{split}/labels.json", split=["ocr_model_training/train", "ocr_model_training/val", "ocr_model_training/test"]),
         "ocr_model_training/doctr",
+        "ocr_model_training/doctr_editable_installed.flag",
         "ocr_model_training/doctr_deps_installed.flag",
         "models_pushed.flag"
 
@@ -62,6 +63,14 @@ rule install_doctr_deps:
         "ocr_model_training/doctr_deps_installed.flag"
     shell:
         "python ocr_model_training/scripts/install_doctr_deps.py && python -c \"open('ocr_model_training/doctr_deps_installed.flag', 'a').close()\""
+
+rule install_doctr_editable:
+    input:
+        directory("ocr_model_training/doctr")
+    output:
+        "ocr_model_training/doctr_editable_installed.flag"
+    shell:
+        "poetry run pip install -e ocr_model_training/doctr && python -c \"open('ocr_model_training/doctr_editable_installed.flag', 'a').close()\""
 
 rule train_and_eval:
     input:
