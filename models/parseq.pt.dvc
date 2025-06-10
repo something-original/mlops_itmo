@@ -1,0 +1,5 @@
+outs:
+- md5: 4e4a42f2dcb8e213ee9150339aacc158
+  size: 95578699
+  hash: md5
+  path: parseq.pt
