@@ -1,8 +1,8 @@
 [core]
-    remote = hf
+    remote = mygdrive
+    autostage = true
 [cache]
     type = "reflink,symlink,hardlink,copy"
-['remote "hf"']
-    url = https://huggingface.co/datasets/smthrgnl/ocr_cyrillic_english
 ['remote "mygdrive"']
-    url = gdrive://gdrive/ocr_datasets
+    url = gdrive://1KKniHEA6O4gRKIkduOEm67i876b47_o6
+    gdrive_use_service_account = true

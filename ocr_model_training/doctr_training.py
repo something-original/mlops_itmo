@@ -3,26 +3,36 @@ import os
 import subprocess
 import json
 import torch
-from doctr.models import db_resnet50, parseq, master, crnn_mobilenet_v3_small, ocr_predictor
-from doctr.datasets.vocabs import VOCABS
+import sys
+import importlib.util
+from doctr.models import db_resnet50, parseq, master, ocr_predictor
 from doctr.io import DocumentFile
 from tqdm import tqdm
 
 
+local_vocabs_path = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), 'doctr', 'doctr', 'datasets', 'vocabs.py')
+)
+spec = importlib.util.spec_from_file_location("local_vocabs", local_vocabs_path)
+local_vocabs = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(local_vocabs)
+VOCABS = local_vocabs.VOCABS
+
+
 def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
-    script = os.path.join('doctr', 'references', 'recognition', 'train_pytorch.py')
-    vocab = 'russian'
+    script = os.path.join('references', 'recognition', 'train_pytorch.py')
+    vocab = 'multilingual'
     cmd = [
-        'python', script, model_name,
-        '--train_path', train_dir,
-        '--val_path', val_dir,
+        sys.executable, script, model_name,
+        '--train_path', f'../../{train_dir}',
+        '--val_path', f'../../{val_dir}',
         '--vocab', vocab,
         '--epochs', str(epochs),
         '--name', model_name,
         '--device', str(device),
         '--pretrained'
     ]
-    subprocess.run(cmd, check=True, cwd='doctr')
+    subprocess.run(cmd, check=True, cwd='ocr_model_training/doctr')
 
     src = os.path.join('doctr', f'{model_name}.pt')
     dst = os.path.join(out_dir, f'{model_name}.pt')
@@ -33,11 +43,7 @@ def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
 def evaluate_model(model_name, checkpoint_path, test_dir):
     detection_model = db_resnet50(pretrained=True, pretrained_backbone=False)
 
-    if model_name == 'ocr_crnn_mobilenet_v3_small':
-        recognition_model = crnn_mobilenet_v3_small(
-            pretrained=False, pretrained_backbone=False, vocab=VOCABS['russian']
-        )
-    elif model_name == 'doctr_parseq':
+    if model_name == 'doctr_parseq':
         recognition_model = parseq(
             pretrained=False, pretrained_backbone=False, vocab=VOCABS['russian']
         )
@@ -87,12 +93,12 @@ def main(train_dir, val_dir, test_dir, out_dir):
 
     os.makedirs(out_dir, exist_ok=True)
 
-    for model_name in ['ocr_crnn_mobilenet_v3_small', 'doctr_parseq', 'doctr_master']:
+    for model_name in ['parseq', 'master']:
         run_training(model_name, train_dir, val_dir, out_dir)
 
     ctc_loss_results = {}
 
-    for model_name in ['ocr_crnn_mobilenet_v3_small', 'doctr_parseq', 'doctr_master']:
+    for model_name in ['parseq', 'master']:
         checkpoint = os.path.join(out_dir, f'{model_name}.pt')
         ctc_loss = evaluate_model(model_name, checkpoint, test_dir)
         ctc_loss_results[model_name] = ctc_loss
@@ -103,7 +109,7 @@ def main(train_dir, val_dir, test_dir, out_dir):
         with open(labels_path, 'r', encoding='utf-8') as f:
             ctc_loss_results[f'{split}_samples'] = len(json.load(f))
 
-    ctc_loss_results['dataset_version'] = 'v1' 
+    ctc_loss_results['dataset_version'] = 'v1'
 
     with open(os.path.join(out_dir, 'ctc_loss.json'), 'w', encoding='utf-8') as f:
         json.dump(ctc_loss_results, f, ensure_ascii=False, indent=2)
@@ -119,4 +125,5 @@ if __name__ == "__main__":
     parser.add_argument('--test_dir', required=True)
     parser.add_argument('--out_dir', required=True)
     args = parser.parse_args()
-    main(args.train_dir, args.val_dir, args.test_dir, args.out_dir) 
+
+    main(args.train_dir, args.val_dir, args.test_dir, args.out_dir)
