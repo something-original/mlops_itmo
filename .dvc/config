@@ -2,6 +2,7 @@
     remote = mygdrive
     autostage = true
 [cache]
+    dir = ocr_model_training/.dvc/cache
     type = "reflink,symlink,hardlink,copy"
 ['remote "mygdrive"']
     url = gdrive://1KKniHEA6O4gRKIkduOEm67i876b47_o6

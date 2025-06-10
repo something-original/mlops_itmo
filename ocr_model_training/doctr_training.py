@@ -10,8 +10,8 @@ from doctr.io import DocumentFile
 from tqdm import tqdm
 
 
-local_vocabs_path = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), 'doctr', 'doctr', 'datasets', 'vocabs.py')
+local_vocabs_path = os.path.join(
+    os.path.dirname(__file__), 'doctr', 'doctr', 'datasets', 'vocabs.py'
 )
 spec = importlib.util.spec_from_file_location("local_vocabs", local_vocabs_path)
 local_vocabs = importlib.util.module_from_spec(spec)
@@ -21,22 +21,28 @@ VOCABS = local_vocabs.VOCABS
 
 def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
     vocab = 'multilingual'
+
+    doctr_dir = os.path.join('ocr_model_training', 'doctr')
+    train_path = os.path.abspath(train_dir)
+    val_path = os.path.abspath(val_dir)
+    out_dir_abs = os.path.abspath(out_dir)
     cmd = [
         sys.executable, '-m', 'references.recognition.train_pytorch', model_name,
-        '--train_path', f'../../{train_dir}',
-        '--val_path', f'../../{val_dir}',
+        '--train_path', train_path,
+        '--val_path', val_path,
         '--vocab', vocab,
         '--epochs', str(epochs),
         '--name', model_name,
-        '--device', str(device)
+        '--device', str(device),
+        '--output_dir', out_dir_abs
     ]
     env = os.environ.copy()
-    # Add the recognition directory to PYTHONPATH
-    recognition_dir = os.path.abspath(os.path.join('ocr_model_training', 'doctr', 'references', 'recognition'))
-    env['PYTHONPATH'] = recognition_dir + os.pathsep + env.get('PYTHONPATH', '')
-    subprocess.run(cmd, check=True, cwd='ocr_model_training/doctr', env=env)
 
-    src = os.path.join('doctr', f'{model_name}.pt')
+    recognition_dir = os.path.abspath(os.path.join(doctr_dir, 'references', 'recognition'))
+    env['PYTHONPATH'] = recognition_dir + os.pathsep + env.get('PYTHONPATH', '')
+    subprocess.run(cmd, check=True, cwd=doctr_dir, env=env)
+
+    src = os.path.join(doctr_dir, f'{model_name}.pt')
     dst = os.path.join(out_dir, f'{model_name}.pt')
     if os.path.exists(src):
         os.rename(src, dst)
@@ -45,11 +51,11 @@ def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
 def evaluate_model(model_name, checkpoint_path, test_dir):
     detection_model = db_resnet50(pretrained=True, pretrained_backbone=False)
 
-    if model_name == 'doctr_parseq':
+    if model_name == 'parseq':
         recognition_model = parseq(
             pretrained=False, pretrained_backbone=False, vocab=VOCABS['multilingual']
         )
-    elif model_name == 'doctr_master':
+    elif model_name == 'master':
         recognition_model = master(
             pretrained=False, pretrained_backbone=False, vocab=VOCABS['multilingual']
         )
@@ -92,7 +98,6 @@ def evaluate_model(model_name, checkpoint_path, test_dir):
 
 
 def main(train_dir, val_dir, test_dir, out_dir):
-
     os.makedirs(out_dir, exist_ok=True)
 
     for model_name in ['parseq', 'master']:
@@ -120,7 +125,6 @@ def main(train_dir, val_dir, test_dir, out_dir):
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_dir', required=True)
     parser.add_argument('--val_dir', required=True)

@@ -9,6 +9,6 @@ RUN pip install snakemake dvc[all]
 
 COPY ocr_model_training/ ocr_model_training/
 COPY Snakefile ./
-COPY config.yaml ./
+COPY snakemake_config.yaml ./
 
 CMD ["snakemake", "--cores", "1"] 

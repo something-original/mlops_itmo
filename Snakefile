@@ -66,7 +66,7 @@ rule install_doctr_deps:
 
 rule install_doctr_editable:
     input:
-        directory("ocr_model_training/doctr")
+       "ocr_model_training/doctr"
     output:
         "ocr_model_training/doctr_editable_installed.flag"
     shell:
@@ -93,4 +93,4 @@ rule push_models:
     output:
         "models_pushed.flag"
     shell:
-        "cd models && dvc add . && dvc push && cd .. && python -c \"open('models_pushed.flag', 'a').close()\""
+        "dvc add models/master.pt && dvc add models/parseq.pt && dvc add models/scores.json && dvc push && cd .. && python -c \"open('models_pushed.flag', 'a').close()\""
