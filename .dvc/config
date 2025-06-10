@@ -1,0 +1,8 @@
+[core]
+    remote = hf
+[cache]
+    type = "reflink,symlink,hardlink,copy"
+['remote "hf"']
+    url = https://huggingface.co/datasets/smthrgnl/ocr_cyrillic_english
+['remote "mygdrive"']
+    url = gdrive://gdrive/ocr_datasets
