@@ -7,7 +7,7 @@ def unzip(zip_path, out_dir, labels_filename):
     images_dir = os.path.join(out_dir, 'images')
     labels_csv = os.path.join(out_dir, labels_filename)
 
-    if os.path.isdir(images_dir) and os.listdir(images_dir) and os.path.isfile(labels_csv) and os.path.getsize(labels_csv) > 0:
+    if os.listdir(images_dir) and os.path.isfile(labels_csv) and os.path.getsize(labels_csv) > 0:
         print(f"{images_dir} and {labels_csv} already exist and are non-empty. Skipping extraction.")
         return
 
