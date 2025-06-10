@@ -14,6 +14,7 @@ credentials.json
 *.flag
 *.pt
 .snakemake/
+doctr/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
