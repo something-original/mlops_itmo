@@ -34,7 +34,8 @@ def run_training(model_name, train_dir, val_dir, out_dir, device=0, epochs=10):
         '--epochs', str(epochs),
         '--name', model_name,
         '--device', str(device),
-        '--output_dir', out_dir_abs
+        '--output_dir', out_dir_abs,
+        '--clearml'
     ]
     env = os.environ.copy()
 

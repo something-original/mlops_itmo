@@ -1,18 +1,22 @@
 import os
 import zipfile
 import argparse
+import tqdm
 
 
 def unzip(zip_path, out_dir, labels_filename):
     images_dir = os.path.join(out_dir, 'images')
     labels_csv = os.path.join(out_dir, labels_filename)
 
-    if os.listdir(images_dir) and os.path.isfile(labels_csv) and os.path.getsize(labels_csv) > 0:
-        print(f"{images_dir} and {labels_csv} already exist and are non-empty. Skipping extraction.")
-        return
+    if os.path.exists(images_dir) and os.listdir(images_dir):
+        if os.path.isfile(labels_csv) and os.path.getsize(labels_csv) > 0:
+            print(f"{images_dir} and {labels_csv} already exist and are non-empty. Skipping extraction.")
+            return
 
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-        zip_ref.extractall(out_dir)
+        members = zip_ref.namelist()
+        for member in tqdm.tqdm(members, desc='Extracting'):
+            zip_ref.extract(member, out_dir)
 
 
 if __name__ == "__main__":

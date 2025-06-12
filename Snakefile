@@ -7,7 +7,8 @@ rule all:
         "ocr_model_training/doctr",
         "ocr_model_training/doctr_editable_installed.flag",
         "ocr_model_training/doctr_deps_installed.flag",
-        "models_pushed.flag"
+        "models_pushed.flag",
+        "clearml_server.flag"
 
 rule dvc_pull_dataset:
     output:
@@ -58,7 +59,7 @@ rule clone_doctr:
 
 rule install_doctr_deps:
     input:
-        "ocr_model_training/doctr/pyproject.toml"
+        "ocr_model_training/doctr"
     output:
         "ocr_model_training/doctr_deps_installed.flag"
     shell:
@@ -94,3 +95,4 @@ rule push_models:
         "models_pushed.flag"
     shell:
         "dvc add models/master.pt && dvc add models/parseq.pt && dvc add models/scores.json && dvc push && cd .. && python -c \"open('models_pushed.flag', 'a').close()\""
+

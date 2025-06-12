@@ -15,6 +15,7 @@ credentials.json
 *.pt
 .snakemake/
 doctr/
+clearml.conf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

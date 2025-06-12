@@ -5,7 +5,10 @@ import argparse
 
 
 def csv_to_json(csv_path, json_path):
+
     df = pd.read_csv(csv_path, sep=';')
+    df['words'] = df['words'].str.replace('\\', '')
+    df = df[df['words'].str.len() < 30]
     labels = {os.path.basename(row['filename']): row['words'] for _, row in df.iterrows()}
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(labels, f, ensure_ascii=False, indent=2)
