@@ -1,0 +1,18 @@
+models:
+  default: "master"
+  paths:
+    master: "models/master.pt"
+    parseq: "models/parseq.pt"
+
+api:
+  host: "0.0.0.0"
+  port: 8080
+  workers: 4
+
+database:
+  uri: "mongodb://mongo:27017/"
+  db_name: "document_comparison"
+
+metrics:
+  storage_path: "metrics"
+  collection_name: "model_metrics" 
