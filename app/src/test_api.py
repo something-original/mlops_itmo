@@ -3,8 +3,7 @@ import json
 import time
 import requests
 import argparse
-from pathlib import Path
-from typing import Dict, Any, List
+from typing import Dict, Any
 import logging
 
 
