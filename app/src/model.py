@@ -36,7 +36,10 @@ class DocumentComparisonModel:
     def _load_model(self):
 
         try:
-            subprocess.run(['dvc', 'pull', f'{self.model_path}.dvc'], check=True)
+            subprocess.run(['git', 'checkout', self.config["models"]["version"]], check=True)
+            subprocess.run(['dvc', 'checkout'], check=True)
+            subprocess.run(['dvc', 'pull', self.model_path + '.dvc'], check=True)
+
             logger.info(f"Successfully pulled model from DVC: {self.model_path}")
 
             self.detection_model = db_resnet50(pretrained=True, pretrained_backbone=True)
