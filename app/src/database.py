@@ -44,6 +44,18 @@ class DocumentDatabase:
         )
         return document
 
+    def delete_document(self, file_path: str) -> bool:
+        doc_hash = self._calculate_hash(file_path)
+        result = self.documents.delete_one({"hash": doc_hash})
+        return result.deleted_count > 0
+
+    def delete_all_documents(self) -> int:
+        result = self.documents.delete_many({})
+        return result.deleted_count
+
+    def get_all_documents(self) -> list:
+        return list(self.documents.find({}, {"_id": 0}))
+
 
 root_path = Path(__file__).resolve().parent.parent
 yaml_path = os.path.join(root_path, "config.yaml")

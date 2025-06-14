@@ -1,74 +1,81 @@
+import os
 import json
 import time
 import requests
+import argparse
 from pathlib import Path
-from typing import Dict, Any
+from typing import Dict, Any, List
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def test_api_endpoint(
     api_url: str,
-    test_dir: str,
+    doc1_path: str,
+    doc2_path: str,
     output_file: str = "test_results.json"
 ) -> Dict[str, Any]:
-    """Test API endpoint with test dataset and collect metrics"""
-    results = []
-    test_files = list(Path(test_dir).glob("*.jpg"))
+    """Test API endpoint with provided document paths"""
 
-    for i in range(0, len(test_files), 2):
-        if i + 1 >= len(test_files):
-            break
+    if not os.path.exists(doc1_path) or not os.path.exists(doc2_path):
+        logger.error(f"One or both files not found: {doc1_path}, {doc2_path}")
+        return {}
 
-        doc1_path = test_files[i]
-        doc2_path = test_files[i + 1]
+    files = {
+        'doc1': (doc1_path, open(doc1_path, 'rb')),
+        'doc2': (doc2_path, open(doc2_path, 'rb'))
+    }
 
-        files = {
-            'doc1': ('doc1.jpg', open(doc1_path, 'rb')),
-            'doc2': ('doc2.jpg', open(doc2_path, 'rb'))
-        }
-
+    try:
         start_time = time.time()
         response = requests.post(f"{api_url}/compare", files=files)
         end_time = time.time()
 
-        files['doc1'][1].close()
-        files['doc2'][1].close()
-
         if response.status_code == 200:
             result = response.json()
             result['request_time'] = end_time - start_time
-            results.append(result)
+
+            with open(output_file, 'a', encoding='utf-8-sig') as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+
+            logger.info("API Response:")
+            logger.info(f"Document 1 text: {result['doc1_text']}")
+            logger.info(f"Document 2 text: {result['doc2_text']}")
+            logger.info("\nMetrics:")
+            logger.info(json.dumps(result['metrics'], indent=2))
+
+            return result
         else:
-            print(f"Error processing {doc1_path} and {doc2_path}: {response.text}")
+            logger.error(f"API request failed with status code: {response.status_code}")
+            logger.error(f"Error message: {response.text}")
+            return {}
 
-    metrics = {
-        'total_requests': len(results),
-        'avg_request_time': sum(r['request_time'] for r in results) / len(results),
-        'avg_inference_time': sum(r['metrics']['inference_time'] for r in results) / len(results),
-        'avg_accuracy': sum(r['metrics']['accuracy'] for r in results) / len(results)
-    }
+    except Exception as e:
+        logger.error(f"Error occurred: {str(e)}")
+        return {}
+    finally:
 
-    with open(output_file, 'w') as f:
-        json.dump({
-            'individual_results': results,
-            'aggregate_metrics': metrics
-        }, f, indent=2)
-
-    return metrics
+        files['doc1'][1].close()
+        files['doc2'][1].close()
 
 
 def main():
-    api_url = "http://localhost:8080"
-    test_dir = "ocr_model_training/test/images"
-    output_file = "test_results.json"
+    parser = argparse.ArgumentParser(description='Test document comparison API')
+    parser.add_argument('doc1_path', help='Path to first document')
+    parser.add_argument('doc2_path', help='Path to second document')
+    parser.add_argument('--api-url', default='http://localhost:8080', help='API URL')
+    parser.add_argument('--output', default='test_results.json', help='Output file for results')
 
-    print("Testing API endpoint...")
-    metrics = test_api_endpoint(api_url, test_dir, output_file)
+    args = parser.parse_args()
 
-    print("\nTest Results:")
-    print(f"Total requests: {metrics['total_requests']}")
-    print(f"Average request time: {metrics['avg_request_time']:.2f} seconds")
-    print(f"Average inference time: {metrics['avg_inference_time']:.2f} seconds")
-    print(f"Average accuracy: {metrics['avg_accuracy']:.2%}")
+    logger.info("Testing API with documents:")
+    logger.info(f"Document 1: {args.doc1_path}")
+    logger.info(f"Document 2: {args.doc2_path}")
+
+    test_api_endpoint(args.api_url, args.doc1_path, args.doc2_path, args.output)
 
 
 if __name__ == "__main__":

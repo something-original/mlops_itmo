@@ -1,5 +1,5 @@
 models:
-  default: "master"
+  default: "parseq"
   paths:
     master: "models/master.pt"
     parseq: "models/parseq.pt"
@@ -10,7 +10,7 @@ api:
   workers: 4
 
 database:
-  uri: "mongodb://mongo:27017/"
+  uri: "mongodb://localhost:27017/"
   db_name: "document_comparison"
 
 metrics:
