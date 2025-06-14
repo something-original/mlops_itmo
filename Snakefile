@@ -94,5 +94,5 @@ rule push_models:
     output:
         "models_pushed.flag"
     shell:
-        "dvc add models/master.pt && dvc add models/parseq.pt && dvc add models/scores.json && dvc push && cd .. && python -c \"open('models_pushed.flag', 'a').close()\""
+        "python update_models_version.py && python -c \"open('models_pushed.flag', 'a').close()\""
 
