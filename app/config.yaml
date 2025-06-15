@@ -13,4 +13,9 @@ models:
   paths:
     master: models/master.pt
     parseq: models/parseq.pt
-  version: v4
+  version: v3
+testing:
+  mode: regular
+  iterations: 10
+  test_dir: ../ocr_model_training/test
+  output_file: test_results.json

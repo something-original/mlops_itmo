@@ -5,11 +5,21 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.model import DocumentComparisonModel
 from src.database import DocumentDatabase
 from src.utils import setup_logging
+from src.metrics import (
+    REQUEST_COUNT, REQUEST_LATENCY, MODEL_ACCURACY, MODEL_INFERENCE_TIME,
+    CACHE_HITS, CACHE_MISSES, HEALTH_CHECK
+)
+from prometheus_client import make_asgi_app
 from pathlib import Path
 import uvicorn
+import time
 
 setup_logging('w', 'logs.log')
 app = FastAPI(title="Document Comparison API")
+
+
+metrics_app = make_asgi_app()
+app.mount("/metrics", metrics_app)
 
 app.add_middleware(
     CORSMiddleware,
@@ -30,6 +40,8 @@ async def compare_documents(
     doc1: UploadFile = File(...),
     doc2: UploadFile = File(...)
 ):
+    start_time = time.time()
+    REQUEST_COUNT.labels(model_name=model.model_name).inc()
 
     try:
         with tempfile.NamedTemporaryFile(delete=False) as temp1, \
@@ -43,6 +55,7 @@ async def compare_documents(
         doc2_cached = db.get_document(temp2_path)
 
         if doc1_cached and doc2_cached:
+            CACHE_HITS.inc()
             result = model.compare_documents(
                 doc1_path=None,
                 doc2_path=None,
@@ -50,6 +63,7 @@ async def compare_documents(
                 doc2_text=doc2_cached["text"],
             )
         else:
+            CACHE_MISSES.inc()
             result = model.compare_documents(
                 doc1_path=temp1_path,
                 doc2_path=temp2_path,
@@ -64,6 +78,10 @@ async def compare_documents(
 
         os.unlink(temp1_path)
         os.unlink(temp2_path)
+
+        MODEL_ACCURACY.labels(model_name=model.model_name).set(result["metrics"]["accuracy"])
+        MODEL_INFERENCE_TIME.labels(model_name=model.model_name).set(result["metrics"]["inference_time"])
+        REQUEST_LATENCY.labels(model_name=model.model_name).observe(time.time() - start_time)
 
         return result
 
@@ -90,7 +108,7 @@ async def delete_cache():
 
 @app.get("/health")
 async def health_check():
-
+    HEALTH_CHECK.set(1)
     return {"status": "healthy"}
 
 

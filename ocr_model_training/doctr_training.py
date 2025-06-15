@@ -115,7 +115,7 @@ def main(train_dir, val_dir, test_dir, out_dir):
         split_dir = train_dir if split == 'train' else val_dir if split == 'val' else test_dir
         labels_path = os.path.join(split_dir, 'labels.json')
         with open(labels_path, 'r', encoding='utf-8') as f:
-            results[f'{split}_samples'] = len(json.load(f))
+            ctc_loss_results[f'{split}_samples'] = len(json.load(f))
 
     ctc_loss_results['dataset_version'] = 'v1'
 

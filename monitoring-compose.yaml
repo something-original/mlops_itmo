@@ -1,25 +1,6 @@
+version: '3.8'
+
 services:
-  mongo:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo_data:/data/db
-
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./app:/app
-    environment:
-      - MONGODB_URI=${MONGODB_URI}
-    depends_on:
-      - prometheus
-      - grafana
-
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
@@ -52,7 +33,4 @@ services:
       - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
     depends_on:
       - prometheus
-    restart: unless-stopped
-
-volumes:
-  mongo_data:
+    restart: unless-stopped 
