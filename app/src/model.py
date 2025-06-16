@@ -36,8 +36,11 @@ class DocumentComparisonModel:
     def _load_model(self):
 
         try:
-            subprocess.run(['git', 'checkout', self.config["models"]["version"]], check=True)
-            subprocess.run(['dvc', 'checkout'], check=True)
+            try:
+                subprocess.run(['git', 'checkout', self.config["models"]["version"]], check=True)
+                subprocess.run(['dvc', 'checkout'], check=True)
+            except (subprocess.CalledProcessError, FileNotFoundError) as e:
+                logger.warning(f"Git checkout failed or git not installed: {str(e)}. Proceeding with DVC operations only.")
             subprocess.run(['dvc', 'pull', f'{self.model_path}.dvc'], check=True)
             logger.info(f"Successfully pulled model from DVC: {self.model_path}")
 

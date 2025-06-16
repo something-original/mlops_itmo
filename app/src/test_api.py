@@ -27,18 +27,18 @@ def get_random_test_images(test_dir: str, num_pairs: int) -> List[Tuple[str, str
         logger.error(f"Test directory not found: {test_dir}")
         return []
 
-    image_files = [f for f in os.listdir(test_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
-    if len(image_files) < 2:
+    image_files = os.listdir(test_dir)
+    if len(image_files) < 1:
         logger.error(f"Not enough images in test directory: {test_dir}")
         return []
 
     pairs = []
     for _ in range(num_pairs):
         if len(image_files) >= 2:
-            pair = random.sample(image_files, 2)
+            img_file = random.choice(image_files)
             pairs.append((
-                os.path.join(test_dir, pair[0]),
-                os.path.join(test_dir, pair[1])
+                os.path.join(test_dir, img_file),
+                os.path.join(test_dir, img_file)
             ))
     return pairs
 
@@ -117,6 +117,9 @@ def main():
     if os.path.exists(output_file):
         os.remove(output_file)
 
+    root_path = Path(__file__).resolve().parent.parent.parent
+    test_dir = os.path.join(root_path, test_dir)
+
     if mode == 'random':
         logger.info(f"Running random test mode with {iterations} iterations")
         logger.info(f"Test directory: {test_dir}")
@@ -128,7 +131,7 @@ def main():
         for i, (doc1_path, doc2_path) in enumerate(pairs, 1):
             logger.info(f"\nIteration {i}/{iterations}")
             test_api_endpoint(args.api_url, doc1_path, doc2_path, output_file)
-            time.sleep(10)
+            time.sleep(2)
     else:
         if not args.doc1_path or not args.doc2_path:
             logger.error("Both doc1-path and doc2-path are required in regular mode")

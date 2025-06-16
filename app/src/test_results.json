@@ -1,0 +1,1500 @@
+﻿{
+  "doc1_text": "4 2$ подставший противодом",
+  "doc2_text": "4 2$ подставший противодом",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8766076564788818,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:48:40",
+    "total_chars": 26,
+    "matching_chars": 26
+  },
+  "request_time": 3.923151731491089,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_247005.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_247005.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 0.0,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:48:44",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 2.052786350250244,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_140884.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_140884.jpg"
+}
+{
+  "doc1_text": "подставших",
+  "doc2_text": "подставших",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.7181971073150635,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:48:50",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 3.7739391326904297,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_82290.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_82290.jpg"
+}
+{
+  "doc1_text": "протов стализация сталин 7 1$ стализация стализация 1$ 2$ стализация 4",
+  "doc2_text": "протов стализация сталин 7 1$ стализация стализация 1$ 2$ стализация 4",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0677192211151123,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:48:56",
+    "total_chars": 70,
+    "matching_chars": 70
+  },
+  "request_time": 4.128406047821045,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_213602.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_213602.jpg"
+}
+{
+  "doc1_text": "ПРОДОЛЖАЛ",
+  "doc2_text": "ПРОДОЛЖАЛ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.6851928234100342,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:01",
+    "total_chars": 9,
+    "matching_chars": 9
+  },
+  "request_time": 3.736224889755249,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_57329.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_57329.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.5957067012786865,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:49:07",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.650489091873169,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_161967.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_161967.jpg"
+}
+{
+  "doc1_text": "4$ 4$ 4$ 4$ ДАЛА",
+  "doc2_text": "4$ 4$ 4$ 4$ ДАЛА",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.050640344619751,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:13",
+    "total_chars": 16,
+    "matching_chars": 16
+  },
+  "request_time": 4.106438159942627,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_99972.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_99972.jpg"
+}
+{
+  "doc1_text": "2$ 2$ 2$ Ф.Д. 7$",
+  "doc2_text": "2$ 2$ 2$ Ф.Д. 7$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0930593013763428,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:19",
+    "total_chars": 16,
+    "matching_chars": 16
+  },
+  "request_time": 4.141355514526367,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_43213.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_43213.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЕТСЯ",
+  "doc2_text": "ПРИСТАВЛЯЕТСЯ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.967414379119873,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:25",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 4.026474952697754,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_89164.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_89164.jpg"
+}
+{
+  "doc1_text": "4$ сгу 4$ 4$ 7$ 7 2$ 4$ 4 7% Д.Д. 4$",
+  "doc2_text": "4$ сгу 4$ 4$ 7$ 7 2$ 4$ 4 7% Д.Д. 4$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.3833370208740234,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:32",
+    "total_chars": 36,
+    "matching_chars": 36
+  },
+  "request_time": 4.437695741653442,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_2631.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_2631.jpg"
+}
+{
+  "doc1_text": "стала стили 2$",
+  "doc2_text": "стала стили 2$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0713438987731934,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:38",
+    "total_chars": 14,
+    "matching_chars": 14
+  },
+  "request_time": 4.115114450454712,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_242616.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_242616.jpg"
+}
+{
+  "doc1_text": "ПОДСТАВШИЙ",
+  "doc2_text": "ПОДСТАВШИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9287140369415283,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:44",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 3.9783425331115723,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_72842.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_72842.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8401436805725098,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:49:50",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.8944268226623535,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_114296.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_114296.jpg"
+}
+{
+  "doc1_text": "Приставший",
+  "doc2_text": "Приставший",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9481828212738037,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:49:56",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 4.016805171966553,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_21390.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_21390.jpg"
+}
+{
+  "doc1_text": "протовой ПРОДОЛЖИВАЛИ 7$",
+  "doc2_text": "протовой ПРОДОЛЖИВАЛИ 7$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0055270195007324,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:02",
+    "total_chars": 24,
+    "matching_chars": 24
+  },
+  "request_time": 4.058868646621704,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_75828.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_75828.jpg"
+}
+{
+  "doc1_text": "подставил",
+  "doc2_text": "подставил",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9420487880706787,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:08",
+    "total_chars": 9,
+    "matching_chars": 9
+  },
+  "request_time": 3.984605312347412,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_213146.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_213146.jpg"
+}
+{
+  "doc1_text": "ПРОДУМЫВАЛ",
+  "doc2_text": "ПРОДУМЫВАЛ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.918412685394287,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:14",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 3.976883888244629,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_21744.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_21744.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.859138011932373,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:50:20",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.920835018157959,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_90545.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_90545.jpg"
+}
+{
+  "doc1_text": "приставляли",
+  "doc2_text": "приставляли",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.944068193435669,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:26",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 4.011628150939941,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_232738.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_232738.jpg"
+}
+{
+  "doc1_text": "2$ ВОДОЛОК",
+  "doc2_text": "2$ ВОДОЛОК",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0241966247558594,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:32",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 4.072359800338745,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_33681.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_33681.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЮЩИЙ",
+  "doc2_text": "ПРИСТАВЛЯЮЩИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.026414155960083,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:38",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 4.079944133758545,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_221220.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_221220.jpg"
+}
+{
+  "doc1_text": "подоров ПОЛОГА станивались",
+  "doc2_text": "подоров ПОЛОГА станивались",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.028472900390625,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:44",
+    "total_chars": 26,
+    "matching_chars": 26
+  },
+  "request_time": 4.088151693344116,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_242870.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_242870.jpg"
+}
+{
+  "doc1_text": "7$ 2$ 2$ ставите 74$ 2$ 2$ 2$ 2$ 7$ 4$",
+  "doc2_text": "7$ 2$ 2$ ставите 74$ 2$ 2$ 2$ 2$ 7$ 4$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.3899030685424805,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:51",
+    "total_chars": 38,
+    "matching_chars": 38
+  },
+  "request_time": 4.440793514251709,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_40640.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_40640.jpg"
+}
+{
+  "doc1_text": "сталит сталит 1 4 вовологических 74",
+  "doc2_text": "сталит сталит 1 4 вовологических 74",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1885297298431396,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:50:57",
+    "total_chars": 35,
+    "matching_chars": 35
+  },
+  "request_time": 4.25295352935791,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_144494.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_144494.jpg"
+}
+{
+  "doc1_text": "ПРОДУМЫВАЛИ",
+  "doc2_text": "ПРОДУМЫВАЛИ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9333345890045166,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:03",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 3.9861161708831787,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_17038.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_17038.jpg"
+}
+{
+  "doc1_text": "приставляли сталуть",
+  "doc2_text": "приставляли сталуть",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.021876573562622,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:09",
+    "total_chars": 19,
+    "matching_chars": 19
+  },
+  "request_time": 4.081643581390381,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_67208.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_67208.jpg"
+}
+{
+  "doc1_text": "стрализационных строй стренов",
+  "doc2_text": "стрализационных строй стренов",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1052660942077637,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:15",
+    "total_chars": 29,
+    "matching_chars": 29
+  },
+  "request_time": 4.159532308578491,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_153020.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_153020.jpg"
+}
+{
+  "doc1_text": "ПОДОЛОГИЯ",
+  "doc2_text": "ПОДОЛОГИЯ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9387552738189697,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:21",
+    "total_chars": 9,
+    "matching_chars": 9
+  },
+  "request_time": 4.008536338806152,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_243025.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_243025.jpg"
+}
+{
+  "doc1_text": "стаку 4$ 1 подов 8$",
+  "doc2_text": "стаку 4$ 1 подов 8$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.13727068901062,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:27",
+    "total_chars": 19,
+    "matching_chars": 19
+  },
+  "request_time": 4.184249639511108,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_195174.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_195174.jpg"
+}
+{
+  "doc1_text": "Приставляется",
+  "doc2_text": "Приставляется",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9627764225006104,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:34",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 4.020039081573486,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_197251.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_197251.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.848867416381836,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:51:39",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.904851198196411,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_188917.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_188917.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЕМЫЙ",
+  "doc2_text": "ПРИСТАВЛЯЕМЫЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9362208843231201,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:45",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 3.9966542720794678,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_18800.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_18800.jpg"
+}
+{
+  "doc1_text": "2$ Ц.Ц. 1$ подставший",
+  "doc2_text": "2$ Ц.Ц. 1$ подставший",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1026771068573,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:51:52",
+    "total_chars": 21,
+    "matching_chars": 21
+  },
+  "request_time": 4.144794940948486,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_280632.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_280632.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8667705059051514,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:51:58",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.9220542907714844,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_61550.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_61550.jpg"
+}
+{
+  "doc1_text": "подставший",
+  "doc2_text": "подставший",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9475510120391846,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:04",
+    "total_chars": 10,
+    "matching_chars": 10
+  },
+  "request_time": 3.9941205978393555,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_275884.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_275884.jpg"
+}
+{
+  "doc1_text": "4$ 4$ 474.57.7.55",
+  "doc2_text": "4$ 4$ 474.57.7.55",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0600671768188477,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:10",
+    "total_chars": 17,
+    "matching_chars": 17
+  },
+  "request_time": 4.11312198638916,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_102064.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_102064.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.849165678024292,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:52:16",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.9003896713256836,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_53266.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_53266.jpg"
+}
+{
+  "doc1_text": "Щ.Д. 4$ 4$ ВОДОК №88",
+  "doc2_text": "Щ.Д. 4$ 4$ ВОДОК №88",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1478092670440674,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:22",
+    "total_chars": 20,
+    "matching_chars": 20
+  },
+  "request_time": 4.199351787567139,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_271691.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_271691.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8485257625579834,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:52:28",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.9041435718536377,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_208252.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_208252.jpg"
+}
+{
+  "doc1_text": "ПРОСТАВЛЯЮЩИЙ",
+  "doc2_text": "ПРОСТАВЛЯЮЩИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9291298389434814,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:34",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 3.9695217609405518,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_26183.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_26183.jpg"
+}
+{
+  "doc1_text": "4$ бур ПРИСТАВЛЯЕТ 4$",
+  "doc2_text": "4$ бур ПРИСТАВЛЯЕТ 4$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.07051682472229,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:40",
+    "total_chars": 21,
+    "matching_chars": 21
+  },
+  "request_time": 4.129024505615234,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_170851.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_170851.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8419911861419678,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:52:46",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.8975346088409424,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_266158.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_266158.jpg"
+}
+{
+  "doc1_text": "противированных 7$ 7$ 2$ 1$ противированных 1$ 5 2$ 1$",
+  "doc2_text": "противированных 7$ 7$ 2$ 1$ противированных 1$ 5 2$ 1$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.4016027450561523,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:52:52",
+    "total_chars": 54,
+    "matching_chars": 54
+  },
+  "request_time": 4.445651531219482,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_233074.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_233074.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8623425960540771,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:52:58",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.916651487350464,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_51515.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_51515.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.852586269378662,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:53:04",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.9057610034942627,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_124558.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_124558.jpg"
+}
+{
+  "doc1_text": "приставляли",
+  "doc2_text": "приставляли",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9452509880065918,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:10",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 3.9986484050750732,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_249307.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_249307.jpg"
+}
+{
+  "doc1_text": "приставляли",
+  "doc2_text": "приставляли",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9569597244262695,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:16",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 4.0133562088012695,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_224521.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_224521.jpg"
+}
+{
+  "doc1_text": "ПРОДОЛЖИВАЛИ",
+  "doc2_text": "ПРОДОЛЖИВАЛИ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9383571147918701,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:22",
+    "total_chars": 12,
+    "matching_chars": 12
+  },
+  "request_time": 3.9914371967315674,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_279691.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_279691.jpg"
+}
+{
+  "doc1_text": "2$ 2$ 74 2$ 7$ 2$ Ц.К. Груз танков",
+  "doc2_text": "2$ 2$ 74 2$ 7$ 2$ Ц.К. Груз танков",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.29463529586792,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:29",
+    "total_chars": 34,
+    "matching_chars": 34
+  },
+  "request_time": 4.355874061584473,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_118535.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_118535.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЕТ",
+  "doc2_text": "ПРИСТАВЛЯЕТ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9310071468353271,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:35",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 3.9842567443847656,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_243483.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_243483.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЕМЫЙ",
+  "doc2_text": "ПРИСТАВЛЯЕМЫЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9671483039855957,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:41",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 4.023713111877441,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_177279.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_177279.jpg"
+}
+{
+  "doc1_text": "1$ ПРОТИВОРОМ 7 ПРОТИВОРОМ 1$ противодительных 1$ 4$ 1$ 8$",
+  "doc2_text": "1$ ПРОТИВОРОМ 7 ПРОТИВОРОМ 1$ противодительных 1$ 4$ 1$ 8$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.408118724822998,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:53:47",
+    "total_chars": 58,
+    "matching_chars": 58
+  },
+  "request_time": 4.4679083824157715,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_141164.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_141164.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8026304244995117,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:53:53",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.848897695541382,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_85901.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_85901.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8511412143707275,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:53:59",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.907081127166748,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_273954.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_273954.jpg"
+}
+{
+  "doc1_text": "кор Ц.Д. 1$ Ц.Ц. волок 4 П.Д.",
+  "doc2_text": "кор Ц.Д. 1$ Ц.Ц. волок 4 П.Д.",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.217839479446411,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:05",
+    "total_chars": 29,
+    "matching_chars": 29
+  },
+  "request_time": 4.274815797805786,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_168316.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_168316.jpg"
+}
+{
+  "doc1_text": "стаку противодительной",
+  "doc2_text": "стаку противодительной",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.992065668106079,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:11",
+    "total_chars": 22,
+    "matching_chars": 22
+  },
+  "request_time": 4.0481767654418945,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_147848.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_147848.jpg"
+}
+{
+  "doc1_text": "ПОЛУЧАТЬ",
+  "doc2_text": "ПОЛУЧАТЬ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9409079551696777,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:17",
+    "total_chars": 8,
+    "matching_chars": 8
+  },
+  "request_time": 3.9965503215789795,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_228280.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_228280.jpg"
+}
+{
+  "doc1_text": "2$ уст устренной 2$",
+  "doc2_text": "2$ уст устренной 2$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.068565845489502,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:23",
+    "total_chars": 19,
+    "matching_chars": 19
+  },
+  "request_time": 4.127514600753784,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_273444.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_273444.jpg"
+}
+{
+  "doc1_text": "1 приставший",
+  "doc2_text": "1 приставший",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.999389886856079,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:29",
+    "total_chars": 12,
+    "matching_chars": 12
+  },
+  "request_time": 4.05521559715271,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_220191.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_220191.jpg"
+}
+{
+  "doc1_text": "ПРОСТАВЛЯЮЩИЙ",
+  "doc2_text": "ПРОСТАВЛЯЮЩИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9328324794769287,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:35",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 3.9787955284118652,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_70854.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_70854.jpg"
+}
+{
+  "doc1_text": "ПОДРОВАЛИ",
+  "doc2_text": "ПОДРОВАЛИ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9133613109588623,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:41",
+    "total_chars": 9,
+    "matching_chars": 9
+  },
+  "request_time": 3.9668047428131104,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_4163.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_4163.jpg"
+}
+{
+  "doc1_text": "противорочными 1 8$ 1",
+  "doc2_text": "противорочными 1 8$ 1",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1117541790008545,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:48",
+    "total_chars": 21,
+    "matching_chars": 21
+  },
+  "request_time": 4.164154052734375,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_266549.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_266549.jpg"
+}
+{
+  "doc1_text": "куп тук 4$ 7$ 4$ 1% 1 1 стала",
+  "doc2_text": "куп тук 4$ 7$ 4$ 1% 1 1 стала",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.2318475246429443,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:54:54",
+    "total_chars": 29,
+    "matching_chars": 29
+  },
+  "request_time": 4.27641487121582,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_160359.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_160359.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЕТ",
+  "doc2_text": "ПРИСТАВЛЯЕТ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9607622623443604,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:00",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 4.023683786392212,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_137316.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_137316.jpg"
+}
+{
+  "doc1_text": "стан сталин 1$ 1$ 1 стала Г.Д. Пуст А.Ц.",
+  "doc2_text": "стан сталин 1$ 1$ 1 стала Г.Д. Пуст А.Ц.",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.334062337875366,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:06",
+    "total_chars": 40,
+    "matching_chars": 40
+  },
+  "request_time": 4.385156869888306,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_238456.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_238456.jpg"
+}
+{
+  "doc1_text": "зум САЛЬНОЙ 2$",
+  "doc2_text": "зум САЛЬНОЙ 2$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.035761833190918,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:12",
+    "total_chars": 14,
+    "matching_chars": 14
+  },
+  "request_time": 4.076249837875366,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_159811.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_159811.jpg"
+}
+{
+  "doc1_text": "4$ устра 7 2$ 2$ 7$ 7 7$ устра ТАКАМИ бура",
+  "doc2_text": "4$ устра 7 2$ 2$ 7$ 7 7$ устра ТАКАМИ бура",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.3251001834869385,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:19",
+    "total_chars": 42,
+    "matching_chars": 42
+  },
+  "request_time": 4.370627164840698,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_29669.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_29669.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8577401638031006,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:55:25",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.912849187850952,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_251961.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_251961.jpg"
+}
+{
+  "doc1_text": "ДОРОВА устром 7$ К.П. сгу",
+  "doc2_text": "ДОРОВА устром 7$ К.П. сгу",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.232442855834961,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:31",
+    "total_chars": 25,
+    "matching_chars": 25
+  },
+  "request_time": 4.278319835662842,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_282533.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_282533.jpg"
+}
+{
+  "doc1_text": "ПРОСТАВЛЯЮЩИХ",
+  "doc2_text": "ПРОСТАВЛЯЮЩИХ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.955061912536621,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:37",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 4.017218351364136,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_52647.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_52647.jpg"
+}
+{
+  "doc1_text": "СТРОЧНЫЙ сталуть СТАЛИ",
+  "doc2_text": "СТРОЧНЫЙ сталуть СТАЛИ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.032402276992798,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:43",
+    "total_chars": 22,
+    "matching_chars": 22
+  },
+  "request_time": 4.102144956588745,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_279308.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_279308.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.877199649810791,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:55:49",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.940559148788452,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_217136.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_217136.jpg"
+}
+{
+  "doc1_text": "противодительных сталить почиминования ПОСТЕВОМ",
+  "doc2_text": "противодительных сталить почиминования ПОСТЕВОМ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.2161407470703125,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:55:55",
+    "total_chars": 47,
+    "matching_chars": 47
+  },
+  "request_time": 4.26799750328064,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_281574.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_281574.jpg"
+}
+{
+  "doc1_text": "кут 2$ приставших",
+  "doc2_text": "кут 2$ приставших",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0689280033111572,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:02",
+    "total_chars": 17,
+    "matching_chars": 17
+  },
+  "request_time": 4.123365879058838,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_169954.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_169954.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8648638725280762,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:56:07",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.920158624649048,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_95002.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_95002.jpg"
+}
+{
+  "doc1_text": "7773$ кут 14$ беспология",
+  "doc2_text": "7773$ кут 14$ беспология",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0897488594055176,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:14",
+    "total_chars": 24,
+    "matching_chars": 24
+  },
+  "request_time": 4.142486095428467,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_230655.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_230655.jpg"
+}
+{
+  "doc1_text": "1$ 4$ бура 2$ 4$ 4$ приставших",
+  "doc2_text": "1$ 4$ бура 2$ 4$ 4$ приставших",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1709742546081543,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:20",
+    "total_chars": 30,
+    "matching_chars": 30
+  },
+  "request_time": 4.226684331893921,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_151580.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_151580.jpg"
+}
+{
+  "doc1_text": "подоров СТРАТЬ",
+  "doc2_text": "подоров СТРАТЬ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.021306037902832,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:26",
+    "total_chars": 14,
+    "matching_chars": 14
+  },
+  "request_time": 4.070393323898315,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_229475.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_229475.jpg"
+}
+{
+  "doc1_text": "приставший №4 ПРОСТАВЛЯЮЩИЙ",
+  "doc2_text": "приставший №4 ПРОСТАВЛЯЮЩИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0872225761413574,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:32",
+    "total_chars": 27,
+    "matching_chars": 27
+  },
+  "request_time": 4.1500818729400635,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_207099.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_207099.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.712416172027588,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:56:38",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.762777805328369,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_35929.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_35929.jpg"
+}
+{
+  "doc1_text": "приставляется 4$",
+  "doc2_text": "приставляется 4$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8293375968933105,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:44",
+    "total_chars": 16,
+    "matching_chars": 16
+  },
+  "request_time": 3.878269672393799,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_247730.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_247730.jpg"
+}
+{
+  "doc1_text": "Приставляется",
+  "doc2_text": "Приставляется",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.6341536045074463,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:50",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 3.6911048889160156,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_163993.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_163993.jpg"
+}
+{
+  "doc1_text": "2$ 2$ 2$ 2$ ПРОТИВОРАМИ ПРОСТАВЛЯЕТСЯ куп 4$ 4 1 ПРОТИВОРАМИ 1$ Г.Д. размер куда СЛЕК Д.Д.",
+  "doc2_text": "2$ 2$ 2$ 2$ ПРОТИВОРАМИ ПРОСТАВЛЯЕТСЯ куп 4$ 4 1 ПРОТИВОРАМИ 1$ Г.Д. размер куда СЛЕК Д.Д.",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.3079469203948975,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:56:56",
+    "total_chars": 90,
+    "matching_chars": 90
+  },
+  "request_time": 4.353331565856934,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_107400.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_107400.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.7156414985656738,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:57:02",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.772021532058716,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_118158.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_118158.jpg"
+}
+{
+  "doc1_text": "2$ 2$ 2$ 14$ 77$ 2$ Порок",
+  "doc2_text": "2$ 2$ 2$ 14$ 77$ 2$ Порок",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.012002944946289,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:08",
+    "total_chars": 25,
+    "matching_chars": 25
+  },
+  "request_time": 4.062013149261475,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_146580.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_146580.jpg"
+}
+{
+  "doc1_text": "8$ 4 4 2$ 7$ 4 1$ 1 1$ кук БАЛА подоров",
+  "doc2_text": "8$ 4 4 2$ 7$ 4 1$ 1 1$ кук БАЛА подоров",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.0919525623321533,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:14",
+    "total_chars": 39,
+    "matching_chars": 39
+  },
+  "request_time": 4.142807245254517,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_209337.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_209337.jpg"
+}
+{
+  "doc1_text": "Строй приставший",
+  "doc2_text": "Строй приставший",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.83087158203125,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:20",
+    "total_chars": 16,
+    "matching_chars": 16
+  },
+  "request_time": 3.8946478366851807,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_274994.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_274994.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.702758550643921,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:57:26",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.7612974643707275,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_32321.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_32321.jpg"
+}
+{
+  "doc1_text": "водолок ПОЛУ",
+  "doc2_text": "водолок ПОЛУ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9369032382965088,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:32",
+    "total_chars": 12,
+    "matching_chars": 12
+  },
+  "request_time": 3.9855854511260986,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_132020.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_132020.jpg"
+}
+{
+  "doc1_text": "",
+  "doc2_text": "",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.7168407440185547,
+    "accuracy": 0,
+    "timestamp": "2025-06-16 19:57:37",
+    "total_chars": 0,
+    "matching_chars": 0
+  },
+  "request_time": 3.7646775245666504,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_188389.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_188389.jpg"
+}
+{
+  "doc1_text": "5$ приставляется",
+  "doc2_text": "5$ приставляется",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.7782905101776123,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:43",
+    "total_chars": 16,
+    "matching_chars": 16
+  },
+  "request_time": 3.8423690795898438,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_248570.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_248570.jpg"
+}
+{
+  "doc1_text": "1$ стала Г.Д. тур 2$ 1%",
+  "doc2_text": "1$ стала Г.Д. тур 2$ 1%",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.072150945663452,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:49",
+    "total_chars": 23,
+    "matching_chars": 23
+  },
+  "request_time": 4.1166136264801025,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_113738.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_113738.jpg"
+}
+{
+  "doc1_text": "2$ почивания 7$ 2$ 2$ 2$ ПОДСТАВШИЙ",
+  "doc2_text": "2$ почивания 7$ 2$ 2$ 2$ ПОДСТАВШИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.038755416870117,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:57:55",
+    "total_chars": 35,
+    "matching_chars": 35
+  },
+  "request_time": 4.085238933563232,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_186288.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_186288.jpg"
+}
+{
+  "doc1_text": "2$ сталина 1 противированных противодом противодом Г.Д. ПОЛУ",
+  "doc2_text": "2$ сталина 1 противированных противодом противодом Г.Д. ПОЛУ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.1591691970825195,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:02",
+    "total_chars": 60,
+    "matching_chars": 60
+  },
+  "request_time": 4.205843448638916,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_83838.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_83838.jpg"
+}
+{
+  "doc1_text": "ПРИСТАВЛЯЮЩИЙ",
+  "doc2_text": "ПРИСТАВЛЯЮЩИЙ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8086798191070557,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:08",
+    "total_chars": 13,
+    "matching_chars": 13
+  },
+  "request_time": 3.859827995300293,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_169463.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_169463.jpg"
+}
+{
+  "doc1_text": "2$ стаку ПРОДОЛЖИВАЛИ",
+  "doc2_text": "2$ стаку ПРОДОЛЖИВАЛИ",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8852736949920654,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:14",
+    "total_chars": 21,
+    "matching_chars": 21
+  },
+  "request_time": 3.9308741092681885,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_297188.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_297188.jpg"
+}
+{
+  "doc1_text": "2$ 2$ противированных противодом противодом почивами противодом 5",
+  "doc2_text": "2$ 2$ противированных противодом противодом почивами противодом 5",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.9821491241455078,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:20",
+    "total_chars": 65,
+    "matching_chars": 65
+  },
+  "request_time": 4.032111644744873,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_238679.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_238679.jpg"
+}
+{
+  "doc1_text": "приставляли",
+  "doc2_text": "приставляли",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.7100934982299805,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:25",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 3.7653698921203613,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_229045.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_229045.jpg"
+}
+{
+  "doc1_text": "2$ 2$ 2$ стализация 2$ 4$",
+  "doc2_text": "2$ 2$ 2$ стализация 2$ 4$",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 2.004105806350708,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:31",
+    "total_chars": 25,
+    "matching_chars": 25
+  },
+  "request_time": 4.055372714996338,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_126930.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_2_126930.jpg"
+}
+{
+  "doc1_text": "1 773$ стро",
+  "doc2_text": "1 773$ стро",
+  "metrics": {
+    "model_name": "parseq",
+    "inference_time": 1.8366074562072754,
+    "accuracy": 1.0,
+    "timestamp": "2025-06-16 19:58:37",
+    "total_chars": 11,
+    "matching_chars": 11
+  },
+  "request_time": 3.897864580154419,
+  "doc1_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_49482.jpg",
+  "doc2_path": "D:\\itmo\\mlops_itmo\\ocr_model_training/test/images\\image_1_49482.jpg"
+}

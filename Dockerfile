@@ -1,13 +1,20 @@
 FROM python:3.12.0-slim
 
 WORKDIR /app
-COPY ./app ./app
-COPY pyproject.toml .
-COPY .dvc .
+
+COPY pyproject.toml poetry.lock ./
+
+RUN pip install poetry && \
+    poetry config virtualenvs.create false && \
+    poetry install --no-root --with app
+
+COPY ./app/src ./src
+COPY ./app/main.py ./main.py
+COPY ./app/config.yaml .
+COPY ./.dvc .
+COPY .git .git
 COPY ./models ./models
 
-RUN pip install poetry
-RUN poetry config virtualenvs.create false && poetry install --no-root --with app
 EXPOSE 8080
 
-CMD ["python", "app/main.py"]
+CMD ["python", "main.py"]

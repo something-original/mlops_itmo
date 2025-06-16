@@ -35,6 +35,11 @@ model = DocumentComparisonModel(config_path)
 db = DocumentDatabase(config_path)
 
 
+HEALTH_CHECK.set(1)
+MODEL_ACCURACY.labels(model_name=model.model_name).set(0)
+MODEL_INFERENCE_TIME.labels(model_name=model.model_name).set(0)
+
+
 @app.post("/compare")
 async def compare_documents(
     doc1: UploadFile = File(...),
@@ -89,8 +94,8 @@ async def compare_documents(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/metrics")
-async def get_metrics():
+@app.get("/model-metrics")
+async def get_model_metrics():
     try:
         return model.get_metrics()
     except Exception as e:
