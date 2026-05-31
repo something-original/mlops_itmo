@@ -1,0 +1,21 @@
+api:
+  host: 0.0.0.0
+  port: 8080
+  workers: 4
+database:
+  db_name: document_comparison
+  uri: mongodb://localhost:27017/
+metrics:
+  collection_name: model_metrics
+  storage_path: metrics
+models:
+  default: parseq
+  paths:
+    master: models/master.pt
+    parseq: models/parseq.pt
+  version: v5
+testing:
+  mode: random
+  iterations: 100
+  test_dir: ocr_model_training/test/images
+  output_file: test_results.json

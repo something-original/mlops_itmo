@@ -1,0 +1,5 @@
+outs:
+- md5: 7997004ffcd924592ff711e76e05adee
+  size: 244063522
+  hash: md5
+  path: master.pt

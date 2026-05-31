@@ -8,8 +8,14 @@ dataset/
 dataset.zip
 ocr_model_training/arial-cyr.ttf
 train/
-test_/
+test/
 val/
+credentials.json
+*.flag
+*.pt
+.snakemake/
+doctr/
+clearml.conf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
